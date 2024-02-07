@@ -36,7 +36,8 @@ class Solution
      
         return (leftl || rightl);
     }
-    public boolean hasPathSum(TreeNode root, int targetSum) {
+    public boolean hasPathSum(TreeNode root, int targetSum) 
+   {
         if(root == null){
            return false;
        }
