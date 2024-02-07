@@ -13,14 +13,18 @@
  *     }
  * }
  */
-class Solution {
-   public  boolean haspath(TreeNode root,int k,int sum ){
+class Solution 
+{
+   public  boolean haspath(TreeNode root,int k,int sum )
+   {
         
         
-        if(root == null){
+        if(root == null)
+        {
             return false;
         }
-        if(root.left == null && root.right == null){
+        if(root.left == null && root.right == null)
+        {
             sum = sum + root.val;
             if(sum == k){
                 return true;
