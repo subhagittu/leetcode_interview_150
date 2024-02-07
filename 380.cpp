@@ -1,4 +1,5 @@
-class RandomizedSet {
+class RandomizedSet 
+{
 public:
     unordered_map<int,int> mp; //<num , index at which num is present>
     vector<int> ans;
