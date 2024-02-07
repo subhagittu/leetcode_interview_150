@@ -1,8 +1,12 @@
-public class Solution {
-public void setZeroes(int[][] matrix) {
+public class Solution 
+{
+public void setZeroes(int[][] matrix) 
+    {
     boolean fr = false,fc = false;
-    for(int i = 0; i < matrix.length; i++) {
-        for(int j = 0; j < matrix[0].length; j++) {
+    for(int i = 0; i < matrix.length; i++) 
+    {
+        for(int j = 0; j < matrix[0].length; j++) 
+        {
             if(matrix[i][j] == 0) {
                 if(i == 0) fr = true;
                 if(j == 0) fc = true;
