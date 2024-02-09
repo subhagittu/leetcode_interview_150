@@ -1,7 +1,8 @@
 class Solution {
     private Map<String, List<String>> graph = new HashMap<>();
 
-    public int minMutation(String start, String end, String[] bank) {
+    public int minMutation(String start, String end, String[] bank) 
+    {
         
         if (!Arrays.asList(bank).contains(end)) return -1;
 
@@ -20,11 +21,13 @@ class Solution {
         while (!queue.isEmpty()) {
             QueueElement element = queue.poll();
 
-            if (element.word.equals(end)) {
+            if (element.word.equals(end)) 
+            {
                 return element.distance;
             }
 
-            for (String vertex : generateWordVertices(element.word)) {
+            for (String vertex : generateWordVertices(element.word)) 
+            {
                 for (String adjacentVertex : graph.get(vertex)) {
                     if (!visited.contains(adjacentVertex)) {
                         visited.add(adjacentVertex);
@@ -38,7 +41,8 @@ class Solution {
 
     }
 
-    private List<String> generateWordVertices(String word) {
+    private List<String> generateWordVertices(String word)
+    {
         List<String> vertices = new ArrayList<>();
         int n = word.length();
 
@@ -50,8 +54,10 @@ class Solution {
 
     }
 
-    private void addWordVerticesToGraph(String word) {
-        for (String vertex : generateWordVertices(word)) {
+    private void addWordVerticesToGraph(String word) 
+    {
+        for (String vertex : generateWordVertices(word)) 
+        {
             if (!graph.containsKey(vertex)) {
                 graph.put(vertex, new ArrayList<>());
             }
@@ -61,11 +67,13 @@ class Solution {
     }
 
 
-    private static class QueueElement {
+    private static class QueueElement 
+    {
         private String word;
         private int distance;
 
-        public QueueElement(String word, int distance) {
+        public QueueElement(String word, int distance) 
+        {
             this.word = word;
             this.distance = distance;
         }
