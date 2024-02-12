@@ -6,7 +6,7 @@ int init = []
     cin.tie(nullptr);
     ofstream out("user.out");
     for (string s; getline(cin, s); out << '\n') 
-    {
+    { 
         if (s.length() == 2) {
             out << 0;
             continue;
