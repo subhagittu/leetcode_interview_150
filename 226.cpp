@@ -1,6 +1,6 @@
 class Solution {
 public:
-    TreeNode* invertTree(TreeNode* root) {
+    TreeNode* invertTree(TreeNode* root) { 
         // Base Case
         if(root==NULL)
             return NULL;
