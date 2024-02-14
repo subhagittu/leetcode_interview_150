@@ -2,7 +2,7 @@ class Solution {
 
     class QueueElement {
         String word;
-        int level;
+        int level; 
         QueueElement(String word, QueueElement prev) {
             this.word = word;
             this.level = prev.level+1;
