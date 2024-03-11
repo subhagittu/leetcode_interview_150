@@ -3,7 +3,7 @@ public:
  int dp[10005];
  int fn( vector<int>&a,int k){
   int ans=INT_MAX;
-  if(dp[k]!=-1)return dp[k];
+  if(dp[k]!=-1)return dp[k]; 
   if(k==0)return 0;
   for(auto &i:a){
      if(k>=i) ans=min(ans+0LL,fn(a,k-i)+1LL);
