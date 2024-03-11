@@ -1,7 +1,7 @@
 /*
 // Definition for a Node.
 class Node {
-public:
+public: 
     int val;
     Node* left;
     Node* right;
