@@ -1,5 +1,5 @@
 class MinStack {
-    LinkedList<TplusMin> stack;
+    LinkedList<TplusMin> stack; 
     private class TplusMin {
         int val;
         int min;
